@@ -1,0 +1,11 @@
+{
+  "name": "LexiTrek Form 1 English",
+  "short_name": "LexiTrek",
+  "description": "Useful English words and a short learning quest.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5ee",
+  "theme_color": "#164e3f",
+  "icons": [{"src": "./app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

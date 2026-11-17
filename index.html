@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164e3f">
+  <meta name="description" content="Explore useful English words and complete a short quest with LexiTrek.">
+  <title>LexiTrek · Your next word adventure</title>
+  <link rel="icon" type="image/svg+xml" href="./app-icon.svg">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to learning</a>
+  <header class="site-header">
+    <a href="#quest" class="brand" aria-label="LexiTrek home"><img src="./app-icon.svg" width="38" height="38" alt=""><span>Lexi<span class="brand-accent">Trek</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#quest" data-nav="quest">My quest</a>
+      <a href="#words" data-nav="words">Word bank</a>
+      <a href="#progress" data-nav="progress">My progress</a>
+    </nav>
+    <span class="connection" id="connection" role="status">Getting ready…</span>
+  </header>
+  <main id="main" tabindex="-1"><div class="loading"><span class="eyebrow">PACKING YOUR WORDS</span><h1>Your adventure is loading…</h1><p>Opening the LexiTrek vocabulary bank.</p></div></main>
+  <footer class="site-footer"><span>LexiTrek <span aria-hidden="true">/</span> Form 1 English</span><span>Learn a little. Use it in your world.</span><a href="./docs/APP_START_HERE.txt">About this pilot</a></footer>
+  <p id="save-status" class="save-status" role="status" hidden></p>
+  <dialog id="word-dialog" aria-labelledby="dialog-title"></dialog>
+  <noscript><p class="notice">Please enable JavaScript in your browser to use LexiTrek.</p></noscript>
+</body>
+</html>
