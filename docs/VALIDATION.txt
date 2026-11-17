@@ -1,0 +1,24 @@
+VALIDATION RECORD
+
+Release: 2.0.0-rehearsal.1
+Date: 17 November 2026
+
+Passed: JavaScript syntax checks for the learner UI, research core and service worker.
+Passed: Runtime source SHA-256 manifest consistency.
+Passed: 27 automated domain/source/offline-worker tests (27 passed, 0 failed).
+
+Coverage includes both recall directions, support and first-attempt records,
+approval/freeze guards, fixed lesson sequencing, all target review coverage,
+post-S8 pause, O2/O3 date windows and deviations, research authorisation filtering,
+rehearsal segregation, duplicate/conflict handling, CSV formula protection,
+scoped offline resources and exclusion of legacy glossary/runtime integrations.
+
+Environment limitation: sites-preview status reported that the preview relay was
+unavailable. No live-browser layout, interaction or actual-device offline QA was
+completed. Simulated service-worker tests are not equivalent to browser testing.
+
+Pending: teacher/expert/sense review, school-device verification, accessibility
+and learner usability, actual 30-minute lesson feasibility, external instrument
+validation, permissions and a main-study release freeze.
+
+No participant data were collected and no effectiveness result is claimed.
