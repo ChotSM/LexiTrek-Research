@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LexiTrek vocabulary reservoir 1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "reservoir_version",
+    "counts",
+    "source",
+    "learning_objectives",
+    "arcs_design",
+    "themes",
+    "entries",
+    "source_relationships"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "reservoir_version": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "filename",
+        "sha256",
+        "extracted_printed_pages",
+        "extracted_pdf_pages"
+      ]
+    },
+    "source_relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "left",
+          "relation",
+          "right",
+          "printed_page",
+          "source_section"
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "occurrence": {
+      "type": "object",
+      "required": [
+        "term",
+        "source_form",
+        "source_section",
+        "printed_page",
+        "pdf_page",
+        "source_meaning",
+        "source_example",
+        "source_id"
+      ],
+      "properties": {
+        "term": {
+          "type": "string"
+        },
+        "source_form": {
+          "type": "string"
+        },
+        "source_section": {
+          "type": "string"
+        },
+        "printed_page": {
+          "type": "integer"
+        },
+        "pdf_page": {
+          "type": "integer"
+        },
+        "source_meaning": {
+          "type": "string"
+        },
+        "source_example": {
+          "type": "string"
+        },
+        "source_id": {
+          "type": "string"
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "term",
+        "item_type",
+        "part_of_speech",
+        "learner_meaning",
+        "example_sentence",
+        "theme_id",
+        "theme",
+        "proposed_stage",
+        "source_occurrences",
+        "arcs",
+        "teacher_review_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^LT-(VOC|AFF)-[A-Z0-9-]+$"
+        },
+        "term": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item_type": {
+          "enum": [
+            "single_word",
+            "multiword_term",
+            "collocation",
+            "phrasal_verb",
+            "expression",
+            "affix"
+          ]
+        },
+        "part_of_speech": {
+          "type": "string",
+          "minLength": 1
+        },
+        "learner_meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example_sentence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "theme_id": {
+          "enum": [
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05",
+            "T06",
+            "T07",
+            "T08",
+            "T09"
+          ]
+        },
+        "theme": {
+          "type": "string"
+        },
+        "proposed_stage": {
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        "source_occurrences": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/occurrence"
+          }
+        },
+        "arcs": {
+          "type": "object",
+          "required": [
+            "attention",
+            "relevance",
+            "confidence",
+            "satisfaction"
+          ],
+          "properties": {
+            "attention": {
+              "type": "string",
+              "minLength": 1
+            },
+            "relevance": {
+              "type": "string",
+              "minLength": 1
+            },
+            "confidence": {
+              "type": "string",
+              "minLength": 1
+            },
+            "satisfaction": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "teacher_review_status": {
+          "enum": [
+            "Pending review",
+            "Approved",
+            "Revise"
+          ]
+        },
+        "audio_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "image_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

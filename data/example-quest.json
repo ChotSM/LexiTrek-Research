@@ -1,0 +1,131 @@
+{
+  "id": "LT-QUEST-GREEN-SCHOOL-01",
+  "title": "A greener school",
+  "theme_id": "T05",
+  "status": "Proposed lesson for teacher review",
+  "target_entry_ids": [
+    "LT-VOC-RECYCLE",
+    "LT-VOC-REUSE",
+    "LT-VOC-REDUCE",
+    "LT-VOC-WASTE",
+    "LT-VOC-ENVIRONMENT"
+  ],
+  "learning_objectives": [
+    "V1",
+    "V2",
+    "V3",
+    "V5"
+  ],
+  "success_statement": "I can explain the five target items and use at least two of them in a helpful school message.",
+  "arcs": {
+    "attention": "Our class has used paper and an empty jar. Can both be useful again in the same way? Predict, then check.",
+    "relevance": "Choose a place in your school where your class could reduce waste.",
+    "confidence": "Study the five example cards. Try supported recognition, then hide the cards for recall. Hints and retries remain available.",
+    "satisfaction": "Write a two-sentence message for your chosen school place. Explain how two target items help make the message useful."
+  },
+  "recognition_tasks": [
+    {
+      "prompt": "A factory processes used paper so it can be made into new paper. Which verb fits?",
+      "options": [
+        "reuse",
+        "recycle",
+        "reduce"
+      ],
+      "correct_answer": "recycle",
+      "feedback": "Recycling processes a used material so it can be used again. Reusing means using an item again."
+    },
+    {
+      "prompt": "Aina keeps an empty jar and uses it as a pencil holder. Which verb best describes what she does?",
+      "options": [
+        "reduce",
+        "recycle",
+        "reuse"
+      ],
+      "correct_answer": "reuse",
+      "feedback": "She uses the same jar again for a new purpose, so she reuses it."
+    },
+    {
+      "prompt": "Our class uses fewer sheets of paper each week. Which verb means to make the amount smaller?",
+      "options": [
+        "recycle",
+        "reduce",
+        "reuse"
+      ],
+      "correct_answer": "reduce",
+      "feedback": "Reduce means make something less or smaller."
+    },
+    {
+      "prompt": "Which word means materials that are no longer needed and are thrown away?",
+      "options": [
+        "resources",
+        "equipment",
+        "waste"
+      ],
+      "correct_answer": "waste",
+      "feedback": "Waste is material that is no longer needed and is thrown away."
+    },
+    {
+      "prompt": "Which word refers to the natural world, including land, water, plants and animals?",
+      "options": [
+        "environment",
+        "equipment",
+        "community"
+      ],
+      "correct_answer": "environment",
+      "feedback": "The environment is the natural world around us."
+    }
+  ],
+  "recall_tasks": [
+    {
+      "entry_id": "LT-VOC-RECYCLE",
+      "prompt": "to process used materials so they can be used again",
+      "expected_target": "recycle",
+      "hint": "Reveal the first letter or return to the example card. Record any hint use."
+    },
+    {
+      "entry_id": "LT-VOC-REUSE",
+      "prompt": "to use something again",
+      "expected_target": "reuse",
+      "hint": "Reveal the first letter or return to the example card. Record any hint use."
+    },
+    {
+      "entry_id": "LT-VOC-REDUCE",
+      "prompt": "to make something smaller or less",
+      "expected_target": "reduce",
+      "hint": "Reveal the first letter or return to the example card. Record any hint use."
+    },
+    {
+      "entry_id": "LT-VOC-WASTE",
+      "prompt": "materials that are no longer needed and are thrown away",
+      "expected_target": "waste",
+      "hint": "Reveal the first letter or return to the example card. Record any hint use."
+    },
+    {
+      "entry_id": "LT-VOC-ENVIRONMENT",
+      "prompt": "the natural world, including land, water, plants and animals",
+      "expected_target": "environment",
+      "hint": "Reveal the first letter or return to the example card. Record any hint use."
+    }
+  ],
+  "production_task": {
+    "prompt": "Write two sentences explaining how pupils can reduce waste in a place you choose at school. Use at least two target items.",
+    "example_response": "We reuse jars to hold pencils. This helps us reduce waste.",
+    "assessment": "Teacher checks that the selected items have the intended meaning and an appropriate form. Other meaningful answers are accepted."
+  },
+  "review_days": [
+    1,
+    3,
+    7,
+    14
+  ],
+  "arcs_pulse": {
+    "status": "Newly authored pilot prompts; not a validated questionnaire",
+    "response_scale": "1 strongly disagree to 5 strongly agree",
+    "items": {
+      "attention": "The word activities kept me interested.",
+      "relevance": "I can use these words in my life.",
+      "confidence": "I feel able to use these words after the practice.",
+      "satisfaction": "I feel pleased with what I can now do."
+    }
+  }
+}
