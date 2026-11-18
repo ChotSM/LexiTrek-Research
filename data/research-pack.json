@@ -1,0 +1,1108 @@
+{
+  "schemaVersion": 1,
+  "id": "LT-UNIT1-CANDIDATES-20261117",
+  "title": "Welcome Island: Find Your Crew",
+  "status": "draft",
+  "scope": "Original rehearsal candidates for school life and friendships; not an approved research target set.",
+  "blocks": [
+    {
+      "id": "A",
+      "title": "Welcome Dock",
+      "mission": "Help a new crew member explain how they feel.",
+      "context": "School life and feelings"
+    },
+    {
+      "id": "B",
+      "title": "Goal Lookout",
+      "mission": "Choose a goal and the actions that can help.",
+      "context": "Goals and personal habits"
+    },
+    {
+      "id": "C",
+      "title": "Friendship Cove",
+      "mission": "Help a crew work together and welcome someone new.",
+      "context": "Friendship and cooperation"
+    },
+    {
+      "id": "D",
+      "title": "School Trail",
+      "mission": "Find the places and materials a new pupil needs.",
+      "context": "School places and activities"
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "teacherReference": "",
+    "expertReference": "",
+    "protocolReference": "",
+    "rightsReference": "",
+    "deviceCheckReference": ""
+  },
+  "words": [
+    {
+      "id": "LT2-CONFIDENT",
+      "term": "confident",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "believing that you can do something successfully",
+      "senseBm": "yakin",
+      "meaningAnswers": [
+        "sure of my ability",
+        "yakin",
+        "percaya pada kebolehan diri"
+      ],
+      "formAnswers": [
+        "confident"
+      ],
+      "contexts": [
+        "I feel confident after practising my introduction.",
+        "A clear plan helps Zara feel confident about her talk."
+      ],
+      "gap": "After practice, I believe I can speak well. I feel ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-NERVOUS",
+      "term": "nervous",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "worried or uneasy about what may happen",
+      "senseBm": "gementar",
+      "meaningAnswers": [
+        "worried",
+        "uneasy",
+        "gementar",
+        "gugup"
+      ],
+      "formAnswers": [
+        "nervous"
+      ],
+      "contexts": [
+        "I feel nervous before meeting an unfamiliar group.",
+        "Hakim is nervous about giving his first short talk."
+      ],
+      "gap": "I feel worried before my first presentation. I feel ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-EAGER",
+      "term": "eager",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "very keen to do or experience something",
+      "senseBm": "bersemangat untuk melakukan sesuatu",
+      "meaningAnswers": [
+        "very keen",
+        "keen",
+        "bersemangat",
+        "tidak sabar untuk melakukan sesuatu"
+      ],
+      "formAnswers": [
+        "eager"
+      ],
+      "contexts": [
+        "Mira is eager to try the new art activity.",
+        "We are eager to hear our team’s idea."
+      ],
+      "gap": "I am very keen to begin the new project. I am ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-CURIOUS",
+      "term": "curious",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "wanting to find out more about something",
+      "senseBm": "ingin tahu",
+      "meaningAnswers": [
+        "wanting to know",
+        "wanting to learn more",
+        "ingin tahu"
+      ],
+      "formAnswers": [
+        "curious"
+      ],
+      "contexts": [
+        "The curious pupil asks how the model works.",
+        "I am curious about the books on the new shelf."
+      ],
+      "gap": "I want to find out how the robot works. I am ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-CALM",
+      "term": "calm",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "relaxed and not upset or worried",
+      "senseBm": "tenang",
+      "meaningAnswers": [
+        "relaxed",
+        "not worried",
+        "tenang"
+      ],
+      "formAnswers": [
+        "calm"
+      ],
+      "contexts": [
+        "I take a quiet moment to feel calm before speaking.",
+        "Her calm voice helps the group listen."
+      ],
+      "gap": "I feel relaxed rather than worried. I feel ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-PROUD",
+      "term": "proud",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "pleased about something you or someone else has done",
+      "senseBm": "bangga",
+      "meaningAnswers": [
+        "pleased with an achievement",
+        "bangga"
+      ],
+      "formAnswers": [
+        "proud"
+      ],
+      "contexts": [
+        "I am proud of the effort I put into my work.",
+        "Our group is proud of the poster we made together."
+      ],
+      "gap": "I feel pleased about finishing a difficult task. I feel ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-WORRIED",
+      "term": "worried",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "thinking about a problem and feeling troubled by it",
+      "senseBm": "risau",
+      "meaningAnswers": [
+        "concerned",
+        "troubled",
+        "risau",
+        "bimbang"
+      ],
+      "formAnswers": [
+        "worried"
+      ],
+      "contexts": [
+        "I am worried that I may forget my lines.",
+        "A friend listens when I feel worried about a task."
+      ],
+      "gap": "I keep thinking about a problem and feel troubled. I am ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-PATIENT",
+      "term": "patient",
+      "partOfSpeech": "adjective",
+      "block": "A",
+      "senseEn": "able to wait or face difficulty without becoming angry",
+      "senseBm": "sabar",
+      "meaningAnswers": [
+        "able to wait calmly",
+        "sabar"
+      ],
+      "formAnswers": [
+        "patient"
+      ],
+      "contexts": [
+        "A patient partner gives me time to explain.",
+        "I try to be patient when the group is learning a new game."
+      ],
+      "gap": "I wait without getting angry. I am ____.",
+      "scene": "compass",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-GOAL",
+      "term": "goal",
+      "partOfSpeech": "noun",
+      "block": "B",
+      "senseEn": "something that you aim to achieve",
+      "senseBm": "matlamat",
+      "meaningAnswers": [
+        "aim",
+        "target",
+        "matlamat",
+        "sasaran"
+      ],
+      "formAnswers": [
+        "goal"
+      ],
+      "contexts": [
+        "My goal is to read a short story on my own.",
+        "We choose one goal for our next group task."
+      ],
+      "gap": "Something I aim to achieve is my ____.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-HABIT",
+      "term": "habit",
+      "partOfSpeech": "noun",
+      "block": "B",
+      "senseEn": "something you do regularly, often in the same way",
+      "senseBm": "tabiat",
+      "meaningAnswers": [
+        "regular action",
+        "something done regularly",
+        "tabiat",
+        "kebiasaan"
+      ],
+      "formAnswers": [
+        "habit"
+      ],
+      "contexts": [
+        "Checking my bag each evening is a useful habit.",
+        "A small reading habit can fit into a busy day."
+      ],
+      "gap": "An action that I do regularly is a ____.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-EFFORT",
+      "term": "effort",
+      "partOfSpeech": "noun",
+      "block": "B",
+      "senseEn": "the energy and hard work used to do something",
+      "senseBm": "usaha",
+      "meaningAnswers": [
+        "hard work",
+        "energy used for a task",
+        "usaha"
+      ],
+      "formAnswers": [
+        "effort"
+      ],
+      "contexts": [
+        "My teacher notices the effort in my revised work.",
+        "We put effort into checking our clues carefully."
+      ],
+      "gap": "The hard work I put into a task is my ____.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-SUCCESS",
+      "term": "success",
+      "partOfSpeech": "noun",
+      "block": "B",
+      "senseEn": "achieving something that you intended to do",
+      "senseBm": "kejayaan",
+      "meaningAnswers": [
+        "achievement of a goal",
+        "achieving a goal",
+        "kejayaan"
+      ],
+      "formAnswers": [
+        "success"
+      ],
+      "contexts": [
+        "Finishing my first book was a personal success.",
+        "Our success came after several careful attempts."
+      ],
+      "gap": "Achieving something we planned to do is a ____.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-IMPROVE",
+      "term": "improve",
+      "partOfSpeech": "verb",
+      "block": "B",
+      "senseEn": "to become better or make something better",
+      "senseBm": "menambah baik",
+      "meaningAnswers": [
+        "become better",
+        "make better",
+        "menambah baik",
+        "memperbaiki"
+      ],
+      "formAnswers": [
+        "improve"
+      ],
+      "contexts": [
+        "I practise reading to improve my understanding.",
+        "Feedback helps us improve our next attempt."
+      ],
+      "gap": "I want my work to become better. I want to ____.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-PRACTISE",
+      "term": "practise",
+      "partOfSpeech": "verb",
+      "block": "B",
+      "senseEn": "to do something repeatedly to develop a skill",
+      "senseBm": "berlatih",
+      "meaningAnswers": [
+        "train",
+        "rehearse",
+        "do repeatedly to learn",
+        "berlatih"
+      ],
+      "formAnswers": [
+        "practise",
+        "practice"
+      ],
+      "contexts": [
+        "We practise our introduction with a partner.",
+        "I practise a little before sharing my idea."
+      ],
+      "gap": "To develop a skill, I do it repeatedly. I ____.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-RESPONSIBLE",
+      "term": "responsible",
+      "partOfSpeech": "adjective",
+      "block": "B",
+      "senseEn": "taking care of your duties and the effects of your actions",
+      "senseBm": "bertanggungjawab",
+      "meaningAnswers": [
+        "taking care of duties",
+        "bertanggungjawab"
+      ],
+      "formAnswers": [
+        "responsible"
+      ],
+      "contexts": [
+        "A responsible group member returns the shared materials.",
+        "I am responsible for bringing our group’s notebook."
+      ],
+      "gap": "I take care of my duties and my actions. I am ____.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-ACHIEVE",
+      "term": "achieve",
+      "partOfSpeech": "verb",
+      "block": "B",
+      "senseEn": "to succeed in reaching something you worked towards",
+      "senseBm": "mencapai",
+      "meaningAnswers": [
+        "reach a goal",
+        "succeed in reaching a goal",
+        "mencapai"
+      ],
+      "formAnswers": [
+        "achieve"
+      ],
+      "contexts": [
+        "Small steps can help me achieve my reading goal.",
+        "We work together to achieve our plan."
+      ],
+      "gap": "I reach a goal after working towards it. I ____ it.",
+      "scene": "flag",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-FRIENDSHIP",
+      "term": "friendship",
+      "partOfSpeech": "noun",
+      "block": "C",
+      "senseEn": "a relationship in which people like and care about each other",
+      "senseBm": "persahabatan",
+      "meaningAnswers": [
+        "relationship between friends",
+        "persahabatan"
+      ],
+      "formAnswers": [
+        "friendship"
+      ],
+      "contexts": [
+        "Our friendship grows as we help each other.",
+        "Sharing an interest can begin a friendship."
+      ],
+      "gap": "A caring relationship between friends is a ____.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-INTEREST",
+      "term": "interest",
+      "partOfSpeech": "noun",
+      "block": "C",
+      "senseEn": "an activity or subject that you enjoy or want to know more about",
+      "senseBm": "minat",
+      "meaningAnswers": [
+        "something enjoyed",
+        "something you enjoy",
+        "an activity you enjoy",
+        "minat"
+      ],
+      "formAnswers": [
+        "interest"
+      ],
+      "contexts": [
+        "Drawing is an interest I share with my cousin.",
+        "A club can help me explore a new interest."
+      ],
+      "gap": "An activity that I enjoy is an ____.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-SKILL",
+      "term": "skill",
+      "partOfSpeech": "noun",
+      "block": "C",
+      "senseEn": "an ability developed through learning or practice",
+      "senseBm": "kemahiran",
+      "meaningAnswers": [
+        "learned ability",
+        "ability developed through practice",
+        "kemahiran"
+      ],
+      "formAnswers": [
+        "skill"
+      ],
+      "contexts": [
+        "Listening carefully is a useful skill for group work.",
+        "I want to develop a new drawing skill."
+      ],
+      "gap": "An ability developed through practice is a ____.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-COOPERATE",
+      "term": "cooperate",
+      "partOfSpeech": "verb",
+      "block": "C",
+      "senseEn": "to work together to do something",
+      "senseBm": "bekerjasama",
+      "meaningAnswers": [
+        "work together",
+        "bekerjasama"
+      ],
+      "formAnswers": [
+        "cooperate"
+      ],
+      "contexts": [
+        "We cooperate to organise our display.",
+        "Partners cooperate by sharing tasks and listening."
+      ],
+      "gap": "We work together towards a shared task. We ____.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-INVITE",
+      "term": "invite",
+      "partOfSpeech": "verb",
+      "block": "C",
+      "senseEn": "to ask someone to join you or take part",
+      "senseBm": "mengajak",
+      "meaningAnswers": [
+        "ask someone to join",
+        "ask someone to take part",
+        "mengajak",
+        "menjemput"
+      ],
+      "formAnswers": [
+        "invite"
+      ],
+      "contexts": [
+        "I invite a new classmate to join our table.",
+        "We invite another team to try our word game."
+      ],
+      "gap": "I ask someone to join our activity. I ____ them.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-INCLUDE",
+      "term": "include",
+      "partOfSpeech": "verb",
+      "block": "C",
+      "senseEn": "to make someone or something part of a group or activity",
+      "senseBm": "melibatkan",
+      "meaningAnswers": [
+        "make part of a group",
+        "make someone part of an activity",
+        "melibatkan",
+        "memasukkan"
+      ],
+      "formAnswers": [
+        "include"
+      ],
+      "contexts": [
+        "We include everyone when we choose group roles.",
+        "Please include one example in your message."
+      ],
+      "gap": "We make everyone part of the activity. We ____ everyone.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-SUPPORT",
+      "term": "support",
+      "partOfSpeech": "verb",
+      "block": "C",
+      "senseEn": "to help or encourage someone",
+      "senseBm": "menyokong",
+      "meaningAnswers": [
+        "help",
+        "encourage",
+        "help or encourage",
+        "menyokong",
+        "membantu"
+      ],
+      "formAnswers": [
+        "support"
+      ],
+      "contexts": [
+        "I support my partner while she practises her talk.",
+        "Friends support each other during a difficult task."
+      ],
+      "gap": "I help and encourage my partner. I ____ my partner.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-RESPECT",
+      "term": "respect",
+      "partOfSpeech": "verb",
+      "block": "C",
+      "senseEn": "to treat someone or something with care and consideration",
+      "senseBm": "menghormati",
+      "meaningAnswers": [
+        "treat with care",
+        "treat with consideration",
+        "menghormati"
+      ],
+      "formAnswers": [
+        "respect"
+      ],
+      "contexts": [
+        "We respect different ideas during discussion.",
+        "I respect a friend’s choice to work quietly."
+      ],
+      "gap": "I treat other people with care and consideration. I ____ them.",
+      "scene": "crew",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-ADVENTURE",
+      "term": "adventure",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "an unusual or exciting experience",
+      "senseBm": "pengembaraan",
+      "meaningAnswers": [
+        "exciting experience",
+        "unusual experience",
+        "pengalaman menarik",
+        "pengembaraan"
+      ],
+      "formAnswers": [
+        "adventure"
+      ],
+      "contexts": [
+        "Exploring a new school can feel like an adventure.",
+        "Our story begins with an adventure on a small island."
+      ],
+      "gap": "An unusual and exciting experience is an ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-ADVICE",
+      "term": "advice",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "a suggestion about what someone could do",
+      "senseBm": "nasihat",
+      "meaningAnswers": [
+        "suggestion",
+        "a helpful suggestion",
+        "nasihat",
+        "cadangan"
+      ],
+      "formAnswers": [
+        "advice"
+      ],
+      "contexts": [
+        "I ask my teacher for advice about my study plan.",
+        "My friend gives me advice about organising my bag."
+      ],
+      "gap": "A helpful suggestion about what to do is ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-FACILITY",
+      "term": "facility",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "a place or piece of equipment provided for a particular purpose",
+      "senseBm": "kemudahan",
+      "meaningAnswers": [
+        "place or equipment for a purpose",
+        "kemudahan"
+      ],
+      "formAnswers": [
+        "facility"
+      ],
+      "contexts": [
+        "The reading room is a useful school facility.",
+        "A sports facility gives pupils a place to train."
+      ],
+      "gap": "A place provided for a particular purpose is a ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-LIBRARY",
+      "term": "library",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "a place where books and other reading materials are kept for people to use",
+      "senseBm": "perpustakaan",
+      "meaningAnswers": [
+        "place for books and reading",
+        "place to borrow books",
+        "perpustakaan"
+      ],
+      "formAnswers": [
+        "library"
+      ],
+      "contexts": [
+        "I find a short story in the library.",
+        "Our class visits the library to choose reading materials."
+      ],
+      "gap": "We borrow books from the ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-SUBJECT",
+      "term": "subject",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "an area of knowledge studied at school",
+      "senseBm": "mata pelajaran",
+      "meaningAnswers": [
+        "area studied at school",
+        "school topic",
+        "mata pelajaran"
+      ],
+      "formAnswers": [
+        "subject"
+      ],
+      "contexts": [
+        "Science is a subject that I enjoy.",
+        "I ask my partner about her favourite subject."
+      ],
+      "gap": "An area of knowledge studied at school is a ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-ACTIVITY",
+      "term": "activity",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "something that people do for a purpose or enjoyment",
+      "senseBm": "aktiviti",
+      "meaningAnswers": [
+        "something people do",
+        "task",
+        "aktiviti"
+      ],
+      "formAnswers": [
+        "activity"
+      ],
+      "contexts": [
+        "Our first activity helps us meet a partner.",
+        "The club plans an activity for new members."
+      ],
+      "gap": "Something we do for learning or enjoyment is an ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-EQUIPMENT",
+      "term": "equipment",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "the items needed to do a particular task",
+      "senseBm": "peralatan",
+      "meaningAnswers": [
+        "items needed for a task",
+        "tools for a task",
+        "peralatan"
+      ],
+      "formAnswers": [
+        "equipment"
+      ],
+      "contexts": [
+        "We put the sports equipment away after the game.",
+        "The art equipment is ready on the table."
+      ],
+      "gap": "The items we need for a task are our ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    },
+    {
+      "id": "LT2-SCHEDULE",
+      "term": "schedule",
+      "partOfSpeech": "noun",
+      "block": "D",
+      "senseEn": "a plan showing when activities will happen",
+      "senseBm": "jadual",
+      "meaningAnswers": [
+        "timetable",
+        "plan of times",
+        "jadual"
+      ],
+      "formAnswers": [
+        "schedule"
+      ],
+      "contexts": [
+        "I check the schedule before choosing an activity.",
+        "Our schedule leaves time for a short review."
+      ],
+      "gap": "A plan showing when activities happen is a ____.",
+      "scene": "map",
+      "audio": null,
+      "rights": {
+        "status": "original",
+        "note": "Independently authored for this prototype; no textbook wording or third-party assets included."
+      },
+      "review": {
+        "teacher": "",
+        "expert": "",
+        "evpStatus": "pending",
+        "evpReference": ""
+      }
+    }
+  ]
+}
