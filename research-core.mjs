@@ -1,6 +1,7 @@
 import {BUILD} from './release-build.mjs';
-export const VERSION = '2.0.0-rehearsal.1';
-export const STORAGE_KEY = 'lexitrek-research-v2';
+export const VERSION = '2.1.0-quest-rehearsal.1';
+// A redesigned rehearsal must never continue or overwrite an older frozen run.
+export const STORAGE_KEY = 'lexitrek-quest-rehearsal-v21';
 export const BLOCKS = ['A','B','C','D'];
 export const LESSONS = [
   {n:1,week:1,introduce:['A'],review:[],focus:'Meet Block A; build meaning and begin written recall.'},
@@ -49,7 +50,7 @@ export async function fingerprint(p){const bytes=new TextEncoder().encode(canoni
 export function readiness(p){
   const errors=validatePack(p);if(errors.length)return errors;
   if(p.status!=='approved'||p.review?.status!=='approved')errors.push('The target pack is still a draft.');
-  for(const k of ['teacherReference','expertReference','protocolReference','rightsReference','deviceCheckReference'])if(!p.review?.[k]?.trim())errors.push(`Missing ${k}.`);
+  for(const k of ['teacherReference','expertReference','protocolReference','rightsReference','deviceCheckReference','gameplayReviewReference','timingPilotReference'])if(!p.review?.[k]?.trim())errors.push(`Missing ${k}.`);
   for(const w of p.words){
     if(!w.review?.teacher?.trim()||!w.review?.expert?.trim())errors.push(`Teacher/expert review pending: ${w.term}.`);
     if(!['checked','not-applicable-with-reason'].includes(w.review?.evpStatus)||!w.review?.evpReference?.trim())errors.push(`Sense-level reference or documented exception pending: ${w.term}.`);
@@ -85,7 +86,25 @@ export function lessonTasks(p,n){
     for(const b of lesson.review){const primary=n===5?['A','B'].includes(b):['C','D'].includes(b);for(const w of groups[b].filter((_,i)=>primary||i%2===(n%2))){add(w,'form',1);add(w,'meaning',1);}}
   }else if(n===7){for(let i=0;i<Math.max(...BLOCKS.map(b=>groups[b].length));i++)for(const b of BLOCKS){const w=groups[b][i];if(w)add(w,i%2?'gap':'meaning',1);}}
   else for(let i=0;i<Math.max(...BLOCKS.map(b=>groups[b].length));i++)for(const b of BLOCKS){const w=groups[b][i];if(w){add(w,'form',1);add(w,'meaning',1);}}
-  return tasks;
+  // Group encounters into short, selectable stops rather than separate screens.
+  // Introductions retain one display, one supported task and one recall per word.
+  const words=[...new Set(tasks.map(t=>t.wordId))], result=[];
+  const size=n<=4?2:4;
+  for(let i=0;i<words.length;i+=size){
+    const ids=words.slice(i,i+size),q=Math.floor(i/size),questId=`S${n}-Q${q+1}`;
+    const selected=tasks.filter(t=>ids.includes(t.wordId));
+    const introductions=selected.some(t=>t.kind==='study');
+    const stages=[selected.filter(t=>t.kind==='study'),selected.filter(t=>t.kind==='recognition'),selected.filter(t=>!['study','recognition'].includes(t.kind))];
+    // Later cumulative stops split form/meaning recall into manageable rounds.
+    if(!introductions&&stages[2].length>size){const recall=stages.pop();stages.push(recall.filter(t=>t.kind==='form'),recall.filter(t=>t.kind!=='form'));}
+    stages.filter(s=>s.length).forEach((stage,j)=>stage.forEach(t=>{
+      let kind=t.kind;
+      if(kind==='recognition'&&q%4===1)kind='build';
+      if(introductions&&kind==='form'&&q%2===1)kind='meaning';
+      result.push({...t,id:`${questId}-${t.wordId}-${kind}`,kind,questId,questIndex:q,stage:`${questId}-R${j+1}`,interaction:kind==='study'?'discovery':kind==='build'?'letter_tiles':kind==='recognition'?['crew_labels','letter_tiles','message_sort','route_choice'][q%4]:'written_recall'});
+    }));
+  }
+  return result;
 }
 export function beginLesson(s,p,hash,n,now=new Date().toISOString()){
   const reason=startAllowed(s,p,hash,n);if(reason)throw Error(reason);
@@ -107,14 +126,14 @@ export function gradePractice(w,kind,answer,support=[]){
   else if(!value)status='not_recalled';
   else if(kind==='meaning')status=[w.senseEn,w.senseBm,...w.meaningAnswers].some(x=>normal(x)===value)?'correct':'review_pending';
   else status=w.formAnswers.some(x=>normal(x)===value)?'correct':'incorrect';
-  return {status,correct:status==='review_pending'?null:status==='correct',assisted:kind==='recognition'||support.length>0,independentPractice:!['study','recognition'].includes(kind)&&support.length===0};
+  return {status,correct:status==='review_pending'?null:status==='correct',assisted:['recognition','build'].includes(kind)||support.length>0,independentPractice:!['study','recognition','build'].includes(kind)&&support.length===0};
 }
 export function answerTask(s,p,answer,elapsedMs=0,now=new Date().toISOString()){
   const a=s.active;if(!a||a.paused||a.result)throw Error('No answerable task.');
   if(contentLocked(s))throw Error('Study content is paused.');
   const t=a.tasks[a.index],w=p.words.find(x=>x.id===t.wordId);if(!w)throw Error('Word missing.');
   const g=gradePractice(w,t.kind,answer,a.support);
-  const row=event(s,t.kind==='study'?'word_display_acknowledged':'practice_response',{wordId:w.id,taskId:t.id,taskKind:t.kind,answer:String(answer),...g,firstAttempt:!(a.taskAttemptCount>0),attemptNumber:(a.taskAttemptCount||0)+1,support:[...a.support],elapsedMs:Math.max(0,Math.round(elapsedMs))},now);
+  const row=event(s,t.kind==='study'?'word_display_acknowledged':'practice_response',{wordId:w.id,taskId:t.id,taskKind:t.kind,questId:t.questId,interaction:t.interaction,answer:String(answer),...g,firstAttempt:!(a.taskAttemptCount>0),attemptNumber:(a.taskAttemptCount||0)+1,support:[...a.support],elapsedMs:elapsedMs===null?null:Math.max(0,Math.round(elapsedMs))},now);
   a.taskAttemptCount=(a.taskAttemptCount||0)+1;a.result=row;a.activeMs+=Math.max(0,elapsedMs);return row;
 }
 export function addSupport(s,p,kind,now=new Date().toISOString()){
@@ -137,14 +156,25 @@ export function closeLesson(s,{completed=false,actualMinutes=null,technicalMinut
   if(actualMinutes!==null&&(!Number.isFinite(actualMinutes)||actualMinutes<0||actualMinutes>240))throw Error('Enter observed instructional minutes from 0 to 240.');
   if(!Number.isFinite(technicalMinutes)||technicalMinutes<0||technicalMinutes>240)throw Error('Enter valid interruption minutes.');
   event(s,'lesson_closed',{completed,observedInstructionMinutes:actualMinutes,technicalMinutes,note},now);
-  const row={id:a.id,profile:a.profile,classCode:a.classCode,authorised:a.authorised,purpose:a.mode==='research'?'research':'rehearsal_not_study_data',fingerprint:a.hash,lesson:a.lesson,startedAt:a.startedAt,endedAt:now,completed,plannedMinutes:30,observedInstructionMinutes:actualMinutes,technicalMinutes,taskActiveMs:Math.round(a.activeMs),plannedTasks:a.tasks.length,completedTasks:a.index,note};
+  const row={id:a.id,profile:a.profile,classCode:a.classCode,authorised:a.authorised,purpose:a.mode==='research'?'research':'rehearsal_not_study_data',fingerprint:a.hash,lesson:a.lesson,startedAt:a.startedAt,endedAt:now,completed,plannedMinutes:30,observedInstructionMinutes:actualMinutes,technicalMinutes,taskActiveMs:Math.round(a.activeMs+(a.currentMs||0)),plannedTasks:a.tasks.length,completedTasks:a.index,note};
   s.sessions.push(row);s.active=null;
+  row.questSummary=a.game?.completed||[];
   // Ending S8 (even incomplete) stops further assigned target-word practice.
   if(row.lesson===8)s.phase='assessment_hold';return row;
 }
 export function timings(s){
   const last=s.sessions.filter(x=>x.lesson===8).at(-1);const o2=s.assessments.O2;
   return {s8:last?.endedAt||null,o2Earliest:last?new Date(Date.parse(last.endedAt)+86400000).toISOString():null,o2Latest:last?new Date(Date.parse(last.endedAt)+172800000).toISOString():null,o3Target:o2?new Date(Date.parse(o2.at)+28*86400000).toISOString():null,o3Earliest:o2?new Date(Date.parse(o2.at)+26*86400000).toISOString():null,o3Latest:o2?new Date(Date.parse(o2.at)+30*86400000).toISOString():null};
+}
+export function recordSessionTiming(s,sessionId,minutes,technicalMinutes,note){
+  if(s.active)throw Error('Close the active lesson before recording observed session time.');
+  const row=s.sessions.find(r=>r.id===sessionId);if(!row)throw Error('Session not found.');
+  if(!Number.isFinite(minutes)||minutes<0||minutes>240||!Number.isFinite(technicalMinutes)||technicalMinutes<0||technicalMinutes>240)throw Error('Enter observed minutes from 0 to 240.');
+  if(!note?.trim())throw Error('Record the source of the timing observation or the reason for an amendment.');
+  const previous={observedInstructionMinutes:row.observedInstructionMinutes,technicalMinutes:row.technicalMinutes};
+  Object.assign(row,{observedInstructionMinutes:minutes,technicalMinutes,timingNote:note,timingRecordedAt:new Date().toISOString()});
+  event(s,'session_timing_recorded',{sessionId,profile:row.profile,classCode:row.classCode,lesson:row.lesson,authorised:row.authorised,previous,observedInstructionMinutes:minutes,technicalMinutes,note});
+  return row;
 }
 export function recordAssessment(s,occasion,at,note=''){
   if(!['O1','O2','O3'].includes(occasion)||!Number.isFinite(Date.parse(at)))throw Error('Supply an assessment occasion and valid actual date/time.');

@@ -20,8 +20,8 @@ The candidate words are ordinary English single-word lexical targets organised i
 | Asset | Origin | Third-party dependency | Current status |
 |---|---|---|---|
 | HTML, CSS, JS and tests | Authored for LexiTrek; original prior prototype styling reused | None | Development source |
-| Compass icon, explorer portraits and scene drawings | Original SVG constructions | None | Development artwork; school-user review pending |
-| 32 lexical records and accepted practice phrasings | Independently authored candidate meanings, translations and contexts | None | Teacher, expert and sense review pending |
+| Compass icon, explorer portraits, island map, satchels, tower, bridge, route, chest and flag | Original SVG constructions | None | Development artwork; school-user review pending |
+| 32 lexical records, original crew messages and accepted practice phrasings | Independently authored candidate meanings, translations and contexts | None | Teacher, expert and sense review pending |
 | Observer checklist indicators | Researcher's supplied Appendix A | No published questionnaire bundled | Fidelity template; not a motivation scale |
 | Audio | Not included | None | Unavailable; do not claim audio readiness |
 | Formal assessments | Not included | None | Independently reviewed restricted materials required |

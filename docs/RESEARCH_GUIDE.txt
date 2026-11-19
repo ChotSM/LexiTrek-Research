@@ -1,4 +1,4 @@
-LEXITREK RESEARCH REHEARSAL 2.0.0-rehearsal.1
+LEXITREK RESEARCH REHEARSAL 2.1.0-quest-rehearsal.1
 
 STATUS
 This is a development/rehearsal release. It is not an expert-approved,
@@ -11,16 +11,25 @@ HTTPS website. The default candidate pack contains 32 original single-word
 records in four school-life blocks. It contains no copied textbook material.
 
 QUICK REHEARSAL
-1. Open Adventure. Choose an original explorer avatar if desired.
-2. Begin lesson 1. Read the example, identify a meaning and type a word.
-3. Try an incorrect response and use the supported retry. A response after
-   feedback is logged separately from a correct first response.
-4. Pause, refresh and resume. A refreshed session returns paused.
-5. Finish for now. Have the observer enter actual instructional minutes;
-   leave the field blank if the duration was not observed.
-6. Open Teacher > Open local teacher controls. Export the candidate register,
-   local JSON record, response CSV and session CSV.
-7. Rehearse the ARCS observer record and conventional delivery record.
+1. Open Adventure. Choose an original explorer if desired.
+2. Start the adventure, then choose any short map stop. In S1, each stop
+   explores two words. Find the satchels and read the revealed word clues.
+3. Try the crew labels, letter tiles, message sorting and route signs.
+   Each stop also includes a short written form or meaning recall activity.
+4. Try a wrong written response, a requested clue and a supported second try.
+   A feedback-assisted response never counts as independent first success.
+5. Collect a map piece, choose another stop, or Save & take a break.
+   Pause within a stop, refresh and resume; your current work is preserved.
+6. Save the final treasure. Observed instructional minutes remain unknown.
+   Teacher > Open local teacher controls > Records and deviations > Record
+   observed digital-lesson time can supply actual observations afterward.
+   Teacher can also end a partial lesson from the pause screen.
+7. Export the target register, local JSON record, response CSV and session CSV.
+   Rehearse the ARCS observation and conventional delivery records.
+
+Read docs/GAMEPLAY_REDESIGN.md for the changed task schedule and ARCS mapping.
+The opening 24 lexical encounters are grouped into four two-word stops;
+this is not a claim of reduced dosage or a validated stop duration.
 
 CONTENT AND FREEZE
 The 32 candidates are an independently authored development set, not a
@@ -37,7 +46,8 @@ Do not fill approval fields solely to unlock the software.
 An approved pack needs:
 - pack.status and pack.review.status set to approved;
 - teacherReference, expertReference, protocolReference, rightsReference,
-  and deviceCheckReference filled with actual evidence identifiers;
+  deviceCheckReference, gameplayReviewReference and timingPilotReference
+  filled with actual evidence identifiers;
 - each word's teacher and expert review evidence;
 - each word's EVP status checked, or not-applicable-with-reason, together
   with a sense-level reference or a documented reason;
@@ -69,11 +79,14 @@ exposures across words. A displayed card is logged as an acknowledgement,
 not proof of reading, understanding or successful recall.
 
 RECALL AND SUPPORT
-Study cards teach meanings with original context and optional BM support.
-Recognition is supported practice. Form and gap tasks require typed English.
-Meaning recall asks for a BM or English explanation. The normal route asks
-for an attempt before revealing the answer. 'I cannot recall yet' is recorded
-as an attempt, followed by feedback. A retry after feedback is supported.
+Revealed clues teach words with original contexts and BM support.
+Recognition and letter building are supported practice. Introductory stops
+alternate typed form recall and typed meaning recall. Later cumulative
+sessions practise both directions. A meaning response can be in English or BM.
+Optional pre-response clues are logged as support. Leaving a written response
+blank records that it was not recalled. Feedback then gives the connection;
+one written retry is available and is always logged as feedback-supported.
+A word reveal is a display record, not proof of reading or understanding.
 
 Meaning responses matching a draft accepted wording receive practice
 feedback. Other nonblank explanations are marked review_pending, not
@@ -124,7 +137,10 @@ Automatic central synchronisation, accounts and remote monitoring are not
 implemented. Records must never be committed to a public repository.
 
 Response exports include unique event ID, release fingerprint, coded learner,
-class, lesson, task type, response, support, first attempt and outcome.
+class, lesson, quest, interaction, task type, response, support, first attempt
+and outcome. Grouped item response times remain null; a separate quest
+activity event records elapsed time for the group. Do not invent item times.
+Map pieces and badges reward completed practice, not primary-test mastery.
 Sessions distinguish 30 planned minutes, observed instructional minutes,
 technical interruption minutes, task-active time, and partial completion.
 Browser task-active time is an implementation estimate, not observed teaching
@@ -152,10 +168,15 @@ Wait for Ready offline after opening the hosted website online on each device.
 Then reload offline and check tasks, data, writing, feedback and saved state.
 Caching uses the same source pack and engine online/offline. Browser data
 clearance/eviction removes local records and resources; export routinely.
-Old v1 pilot caches at the same scope are removed. Old localStorage is not
-imported into the study, and old records are not automatically deleted.
-The v2 service worker is cache-first for a stable rehearsal release. A future
-update must bump the cache and application version together. Version changes
+Old v1 pilot caches at the same scope are removed. Earlier localStorage is not
+imported into this version, and earlier records are not automatically deleted.
+A download of an earlier v2 local run is offered in Teacher when present.
+If the earlier run was frozen for research, this redesign blocks its own
+pupil content on that browser. Preserve that run and review the new game in
+a separate development browser profile; do not reopen study practice during
+the retention interval by switching versions.
+The service worker is cache-first for a stable rehearsal release. A future
+update must bump the cache and application version together. The new quest version also uses a separate local storage key. Version changes
 alter the fingerprint and prevent silent continuation of a frozen run.
 
 BEFORE MAIN-STUDY USE

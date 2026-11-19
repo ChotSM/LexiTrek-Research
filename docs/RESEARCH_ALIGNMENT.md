@@ -11,7 +11,7 @@ This is a development mapping to the supplied Chapters 1–3, especially Section
 | Eight 30-minute lessons over four weeks | Fixed S1–S8 block sequence, cumulative review and task counts | Actual school timetable, teacher manuals and task-burden pilot |
 | No scheduled target review after S8 | App-wide pause following S8 closure; no home-practice reminders or post-S8 replay | Managed-device restrictions, offline-copy controls and exposure observation |
 | O2 24–48 h after S8; O3 28 d after O2, window 26–30 | Date calculation and deviation-required out-of-window recording | Actual independent administration and trustworthy external timestamps |
-| ARCS as design rather than outcome | Themed tasks, familiar contexts, correction, progress and Appendix-A-style observer form | Expert review and observed delivery; no causal mediation claim |
+| ARCS as design rather than outcome | Selectable short stops, discovery, different supported interactions, contextual messages, optional clues, specific correction, map-piece collection and observer form | Expert review and observed delivery; no causal mediation claim |
 | Active conventional comparison | Common delivery log and common target register available to teacher | Document existing practice; same teacher arrangement if feasible |
 | Support transparency | First responses, supported retries, task types and response timing logged | Observer verification; teacher-provided audio/translation recorded separately |
 | Reproducible research version | SHA-256 of canonical pack + application version + fixed schedule; approval-field freeze | Reviewed content and actual school-device verification |
@@ -28,6 +28,10 @@ This is a development mapping to the supplied Chapters 1–3, especially Section
 
 ## Data interpretation
 
-Recognition is supported practice. A shown card is an acknowledgement, not proof of learning. Correct practice is not primary-test success. Meaning responses outside the draft accepted list are pending human review. Unobserved minutes remain null; partial sessions remain partial. No event, completion badge, observer rating or time measure is labelled as vocabulary mastery, attention or increased motivation.
+Recognition and letter building are supported practice. A revealed word clue is a display record, not proof of learning. Correct practice is not primary-test success. Meaning responses outside the draft accepted list are pending human review. Unobserved minutes remain null; partial sessions remain partial. No event, completion badge, observer rating or time measure is labelled as vocabulary mastery, attention or increased motivation.
 
 One research browser run belongs to one coded learner. The first release is a local rehearsal with behavioural controls. It is not sufficient by itself for secure multi-device classroom deployment or protection against a user reading downloaded JavaScript/data. A supervised laboratory pilot is a prerequisite to a main-study release.
+
+## Quest redesign, version 2.1
+
+See [GAMEPLAY_REDESIGN.md](GAMEPLAY_REDESIGN.md) for the exact opening task mapping, ARCS design intentions, altered recall balance, learner-selected within-lesson order, group-level timing and required protocol/timing review. Version 2.1 uses a separate local run and cannot continue an earlier frozen release. The opening still includes 24 planned lexical encounters, now grouped into four two-word stops; fewer screens do not establish a lower exposure dose.

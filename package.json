@@ -1,6 +1,6 @@
 {
   "name": "lexitrek-research-rehearsal",
-  "version": "2.0.0-rehearsal.1",
+  "version": "2.1.0-quest-rehearsal.1",
   "private": true,
   "type": "module",
   "scripts": {"build:manifest": "node scripts/build-manifest.mjs", "test": "node scripts/build-manifest.mjs --check && node --test tests/*.test.mjs"},

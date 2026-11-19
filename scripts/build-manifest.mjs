@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const root=new URL('../',import.meta.url);
-const files=['app-icon.svg','app.js','data/research-pack.json','index.html','manifest.webmanifest','research-core.mjs','service-worker.js','styles.css'];
+const files=['app-icon.svg','app.js','data/research-pack.json','index.html','manifest.webmanifest','research-core.mjs','quest-engine.mjs','quest-ui.mjs','quest-styles.css','service-worker.js','styles.css'];
 const sha=data=>createHash('sha256').update(data).digest('hex');
 const hashes={};for(const file of files)hashes[file]=sha(await fs.readFile(new URL(file,root)));
 const pkg=JSON.parse(await fs.readFile(new URL('package.json',root),'utf8'));
