@@ -1,0 +1,187 @@
+LEXITREK RESEARCH REHEARSAL 2.1.0-quest-rehearsal.1
+
+STATUS
+This is a development/rehearsal release. It is not an expert-approved,
+validated or school-device-verified main-study intervention. Use synthetic
+codes and rehearsal records until all required approvals are complete.
+
+OPEN THE APP
+Publish these files at the repository root through GitHub Pages. Open the
+HTTPS website. The default candidate pack contains 32 original single-word
+records in four school-life blocks. It contains no copied textbook material.
+
+QUICK REHEARSAL
+1. Open Adventure. Choose an original explorer if desired.
+2. Start the adventure, then choose any short map stop. In S1, each stop
+   explores two words. Find the satchels and read the revealed word clues.
+3. Try the crew labels, letter tiles, message sorting and route signs.
+   Each stop also includes a short written form or meaning recall activity.
+4. Try a wrong written response, a requested clue and a supported second try.
+   A feedback-assisted response never counts as independent first success.
+5. Collect a map piece, choose another stop, or Save & take a break.
+   Pause within a stop, refresh and resume; your current work is preserved.
+6. Save the final treasure. Observed instructional minutes remain unknown.
+   Teacher > Open local teacher controls > Records and deviations > Record
+   observed digital-lesson time can supply actual observations afterward.
+   Teacher can also end a partial lesson from the pause screen.
+7. Export the target register, local JSON record, response CSV and session CSV.
+   Rehearse the ARCS observation and conventional delivery records.
+
+Read docs/GAMEPLAY_REDESIGN.md for the changed task schedule and ARCS mapping.
+The opening 24 lexical encounters are grouped into four two-word stops;
+this is not a claim of reduced dosage or a validated stop duration.
+
+CONTENT AND FREEZE
+The 32 candidates are an independently authored development set, not a
+verified KP2027/EVP list. Teacher/expert review and sense references are
+pending. The final N may differ after the pilot; it must be settled before O1.
+The app supports 4-120 single-word targets split across four nonempty blocks.
+It does not imply that all resource-pool words should be taught or tested.
+
+Export the draft pack. Independent reviewers should check the target senses,
+curriculum links, ambiguity, English examples, BM meanings, accepted variants,
+task burden and spelling policy. Record real review references in the pack.
+Do not fill approval fields solely to unlock the software.
+
+An approved pack needs:
+- pack.status and pack.review.status set to approved;
+- teacherReference, expertReference, protocolReference, rightsReference,
+  deviceCheckReference, gameplayReviewReference and timingPilotReference
+  filled with actual evidence identifiers;
+- each word's teacher and expert review evidence;
+- each word's EVP status checked, or not-applicable-with-reason, together
+  with a sense-level reference or a documented reason;
+- documented licences for any non-original material (none bundled here).
+
+This release intentionally rejects imported audio paths because it cannot
+verify a new audio package. It includes no audio playback or voice collection.
+If pronunciation is teacher-provided, record it as delivered support.
+
+Before O1, archive rehearsal records, clear that rehearsal run, import the
+reviewed pack, then freeze the research run. The freeze stores version,
+SHA-256 fingerprint, time, N and evidence references. It checks required
+fields; it cannot independently certify the truth of a review or an approval.
+The proposal, assessment booklet/key and institutional correspondence must
+remain in restricted research storage, not this public source repository.
+
+EIGHT LESSONS
+Each lesson is planned as 30 minutes: about 5 for goals/review, 20 for
+vocabulary activities, and 5 for independent class work and closure.
+S1 introduces A. S2 reviews A and introduces B. S3 reviews A/B and introduces
+C. S4 reviews B/C and introduces D. S5 emphasises A/B and selected C/D.
+S6 emphasises C/D and selected A/B. S7 interleaves meanings and sentence gaps.
+S8 supplies final cumulative form and meaning recall practice.
+
+The actual task counts are shown in Teacher and vary with N. No claim is
+made that the candidate load fits 20 minutes for all learners. Rehearse it.
+Earlier blocks have more planned review opportunities; do not claim equal
+exposures across words. A displayed card is logged as an acknowledgement,
+not proof of reading, understanding or successful recall.
+
+RECALL AND SUPPORT
+Revealed clues teach words with original contexts and BM support.
+Recognition and letter building are supported practice. Introductory stops
+alternate typed form recall and typed meaning recall. Later cumulative
+sessions practise both directions. A meaning response can be in English or BM.
+Optional pre-response clues are logged as support. Leaving a written response
+blank records that it was not recalled. Feedback then gives the connection;
+one written retry is available and is always logged as feedback-supported.
+A word reveal is a display record, not proof of reading or understanding.
+
+Meaning responses matching a draft accepted wording receive practice
+feedback. Other nonblank explanations are marked review_pending, not
+automatically wrong: a human must consider valid paraphrases. This is not
+the primary-test marking system. Final scoring policies need separate review.
+
+INDEPENDENT ASSESSMENTS
+Record only administration dates in this app. Administer tests externally.
+O1: before S1; proposed 3-7 school days beforehand.
+O2: 24-48 hours after S8.
+O3: 28 calendar days after O2; document actual day and days 26-30 window.
+Form recall comes first and its response sheets are collected before meaning
+recall displays target spellings. No hints, word banks, app access or answer
+feedback are supplied during tests. Do not return marked answers before O3.
+
+No primary outcome scores, formal items or scoring keys are stored here.
+For N approved words, the proposed full external test has 2N responses.
+Its length, allowed meanings/spellings and equal-weight composite need
+expert/pilot justification. Absent tests are missing, not automatic zeros.
+
+PRACTICE PAUSE AFTER S8
+Ending S8, including a partial S8, changes this device to assessment_hold.
+Word-bank access and target-word lessons are blocked. Recording O2 changes
+the phase to follow_up without reopening content. Recording O3 does not
+silently start extra practice. A separate rehearsal can be started only by
+the teacher after archiving completed-run records.
+
+These are client-side behavioural controls. Downloaded JavaScript/data can
+be inspected or copied by a technically able user; this is not DRM, secure
+remote authentication or prevention of every incidental exposure. A real
+study needs school-managed devices, controlled offline copies, no assigned
+target-word home review, and a deviation log. Browser date/time is not a
+trusted study clock. Verify actual timing externally.
+
+LOCAL RECORDS AND CONFIDENTIALITY
+Use codes such as P001 and C1, never names, IDs, emails or PBD histories.
+A research browser run belongs to one coded learner. Other learners require
+separate managed profiles/runs; do not overwrite one learner's records.
+Rehearsal records are not research data. A pupil without research recording
+authorisation can still learn; item response events are not retained in
+research mode for that pupil. This checkbox records an operator's decision
+under the actual approved consent process; it does not obtain consent.
+
+The system stores records locally and does not upload them. Browser storage
+is not encrypted and local teacher controls are not access authentication.
+Use the institution's approved restricted devices and export destination.
+Automatic central synchronisation, accounts and remote monitoring are not
+implemented. Records must never be committed to a public repository.
+
+Response exports include unique event ID, release fingerprint, coded learner,
+class, lesson, quest, interaction, task type, response, support, first attempt
+and outcome. Grouped item response times remain null; a separate quest
+activity event records elapsed time for the group. Do not invent item times.
+Map pieces and badges reward completed practice, not primary-test mastery.
+Sessions distinguish 30 planned minutes, observed instructional minutes,
+technical interruption minutes, task-active time, and partial completion.
+Browser task-active time is an implementation estimate, not observed teaching
+time or a measure of attention. Hidden tabs are paused automatically.
+
+The research merger rejects rehearsal files, version/pack mismatches,
+non-authorised records and conflicting duplicate IDs. Identical repeated
+exports are deduplicated. It combines learner event/session ledgers only;
+keep the original exports, observer records, conventional logs and assessment
+administration records separately under the approved management procedure.
+
+ARCS CHECKLIST
+The eight observer indicators are based on the researcher's supplied
+Appendix A. Rate 0, 1, 2 or NA and supply observed evidence. These ratings
+are design/fidelity documentation, not an IMMS or pupil motivation outcome.
+
+COMPARISON CONDITION
+Teacher documentation covers the same approved targets, scheduled time and
+external assessments. Record normal active conventional teaching without
+pretending that it replicates the digital quest mechanics or exact exposure
+counts. Do not display LexiTrek practice to the comparison class before O3.
+
+OFFLINE AND UPDATES
+Wait for Ready offline after opening the hosted website online on each device.
+Then reload offline and check tasks, data, writing, feedback and saved state.
+Caching uses the same source pack and engine online/offline. Browser data
+clearance/eviction removes local records and resources; export routinely.
+Old v1 pilot caches at the same scope are removed. Earlier localStorage is not
+imported into this version, and earlier records are not automatically deleted.
+A download of an earlier v2 local run is offered in Teacher when present.
+If the earlier run was frozen for research, this redesign blocks its own
+pupil content on that browser. Preserve that run and review the new game in
+a separate development browser profile; do not reopen study practice during
+the retention interval by switching versions.
+The service worker is cache-first for a stable rehearsal release. A future
+update must bump the cache and application version together. The new quest version also uses a separate local storage key. Version changes
+alter the fingerprint and prevent silent continuation of a frozen run.
+
+BEFORE MAIN-STUDY USE
+Complete teacher/expert/pilot and rights reviews, device and offline testing,
+institutional permissions, actual class allocation and teacher arrangements,
+independent test review, protocol reconciliation, and a release freeze.
+No built feature certifies an ethical approval, effective intervention,
+validated test, or causal treatment effect.
