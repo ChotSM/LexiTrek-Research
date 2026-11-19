@@ -1,6 +1,10 @@
-# LexiTrek research rehearsal
+# LexiTrek: Welcome Island quest rehearsal
 
-This version turns the original learner prototype into a reproducible rehearsal for a vocabulary acquisition and retention study. It adds written form recall, meaning recall, contextual practice, eight scheduled lessons, original bilingual content, local implementation records and a pause on study-word practice after S8.
+The opening lesson is a four-stop treasure hunt: label the crew’s feelings, rebuild word signals, sort messages and mark the route to a hidden cove. Each stop explores two words, includes brief written recall and awards a map piece. Pupils choose their route, receive word-specific feedback, and can save for a break. The same grouped-quest engine supports the eight lesson plans.
+
+This is release **2.1.0-quest-rehearsal.1**. It changes task presentation, supported task types, within-lesson ordering and the introduction-session recall balance. Read [the gameplay redesign and ARCS mapping](docs/GAMEPLAY_REDESIGN.md). Research approval and timing evidence must be renewed before freezing this version. Earlier local records remain intact under their earlier storage key.
+
+**Review:** [Try the separate playable preview](https://chotsm.github.io/LexiTrek-Research/quest-preview/#adventure). The current root app remains unchanged. All four opening stops, feedback, pause/reload, treasure saving and export have been exercised in a desktop browser; 41 automated tests pass. Actual phone/school-device offline checks and pupil playtesting remain pending. No effectiveness result is claimed.
 
 The bundled 32 words are candidates, not an approved research target set. The approximate 120-word resource pool and final research N are separate decisions. Every teacher, expert and sense-reference field starts pending. No CEFR levels or review approvals are invented.
 

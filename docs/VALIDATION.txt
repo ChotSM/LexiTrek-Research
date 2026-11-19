@@ -1,24 +1,60 @@
 VALIDATION RECORD
 
-Release: 2.0.0-rehearsal.1
-Date: 17 November 2026
+Release: 2.1.0-quest-rehearsal.1
+Date: 19 November 2026
 
-Passed: JavaScript syntax checks for the learner UI, research core and service worker.
+Passed: JavaScript module syntax checks.
 Passed: Runtime source SHA-256 manifest consistency.
-Passed: 27 automated domain/source/offline-worker tests (27 passed, 0 failed).
+Passed: 41 automated domain, quest-engine, screen-render and source/offline-worker tests.
 
-Coverage includes both recall directions, support and first-attempt records,
-approval/freeze guards, fixed lesson sequencing, all target review coverage,
-post-S8 pause, O2/O3 date windows and deviations, research authorisation filtering,
-rehearsal segregation, duplicate/conflict handling, CSV formula protection,
-scoped offline resources and exclusion of legacy glossary/runtime integrations.
+New coverage includes:
+- Four two-word opening stops and four distinct supported interaction types.
+- Stable map placement despite learner-selected stop order.
+- Clue collection, letter construction labelled as supported practice,
+  first attempts, requested support, one feedback retry and pending meanings.
+- Duplicate-safe completion rewards and no mastery claims in reward metadata.
+- Serialized pause/resume state retaining in-progress tiles and completed stops.
+- Earlier frozen research runs block redesigned content on the same browser,
+  including during the assessment/retention hold; old records stay downloadable.
+- Complete game-engine journeys through all eight lessons and post-S8 pause.
+- Research authorisation filtering of game events.
+- Observed timing supplied after closure, with audit records for amendments.
+- New gameplay-review and timing-pilot requirements for research freeze.
+- Pupil screen generation for map, exploration, labels, tiles, sorting, routes,
+  written recall, specific feedback, map-piece rewards and the collection.
 
-Environment limitation: sites-preview status reported that the preview relay was
-unavailable. No live-browser layout, interaction or actual-device offline QA was
-completed. Simulated service-worker tests are not equivalent to browser testing.
+The existing assessment windows, export separation, duplicate/conflict checks,
+CSV formula protection and local-only runtime checks also pass.
+The simulated offline cache includes all 12 packaged resources.
 
-Pending: teacher/expert/sense review, school-device verification, accessibility
-and learner usability, actual 30-minute lesson feasibility, external instrument
-validation, permissions and a main-study release freeze.
+DESKTOP BROWSER REHEARSAL
+The managed preview relay was unavailable. An isolated GitHub Pages review
+page was published under quest-preview/ without replacing the existing root app.
+Preview source commit: ed6e5ac38fb020498bf66f045714b0a3922f3a59.
 
-No participant data were collected and no effectiveness result is claimed.
+All four opening stops completed through the real browser UI. Verified:
+- Reverse-order clue discovery and the crew-label placements.
+- Specific positive/corrective feedback, a pre-response clue, one supported
+  second try, and an unfamiliar meaning marked for teacher review.
+- Word-tile assembly, undo availability, pause/reload/resume retaining a
+  partially assembled word and an already-collected map piece.
+- Message sorting and keyboard-operated route choices.
+- Four map pieces, final treasure reveal, saving and the personal collection.
+- Teacher controls and the observed-digital-time form open correctly.
+- Local JSON export download and inspection: rehearsal-only purpose,
+  S1 completed (24/24 encounters), 4 pieces, 6 correct first unaided responses,
+  supported retry and pending meaning, group timing and unknown observed
+  teaching minutes retained as null.
+- No application-origin console errors observed. Extension metadata errors
+  were external to LexiTrek. No overflow at tested desktop width.
+
+PENDING
+Actual mobile layout/touch, full keyboard and screen-reader accessibility,
+real network-off reload, service-worker updates on school devices and actual
+school-device save/export workflows have not been verified. Ready offline is
+not by itself proof of a genuine offline test. The simulated worker tests
+remain distinct from real-device offline testing.
+
+Teacher/expert/sense and gameplay review, pupil usability and workload pilot,
+actual lesson timing, instrument validation and study permissions remain pending.
+No participant data were collected or effectiveness results claimed.

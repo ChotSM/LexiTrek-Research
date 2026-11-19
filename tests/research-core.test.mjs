@@ -6,7 +6,7 @@ import * as C from '../research-core.mjs';
 if(!globalThis.crypto)globalThis.crypto=webcrypto;
 const original=JSON.parse(await fs.readFile(new URL('../data/research-pack.json',import.meta.url)));
 const hash=await C.fingerprint(original);
-function reviewed(){const p=structuredClone(original);p.status='approved';p.review.status='approved';for(const key of ['teacherReference','expertReference','protocolReference','rightsReference','deviceCheckReference'])p.review[key]='SYNTHETIC TEST FIXTURE ONLY';for(const w of p.words)w.review={teacher:'TEST FIXTURE',expert:'TEST FIXTURE',evpStatus:'not-applicable-with-reason',evpReference:'TEST FIXTURE ONLY; no real review claimed'};return p;}
+function reviewed(){const p=structuredClone(original);p.status='approved';p.review.status='approved';for(const key of ['teacherReference','expertReference','protocolReference','rightsReference','deviceCheckReference','gameplayReviewReference','timingPilotReference'])p.review[key]='SYNTHETIC TEST FIXTURE ONLY';for(const w of p.words)w.review={teacher:'TEST FIXTURE',expert:'TEST FIXTURE',evpStatus:'not-applicable-with-reason',evpReference:'TEST FIXTURE ONLY; no real review claimed'};return p;}
 const approved=reviewed(),approvedHash=await C.fingerprint(approved);
 function finish(s,p,h,n,now='2027-02-01T06:00:00.000Z'){
   C.beginLesson(s,p,h,n,now);
